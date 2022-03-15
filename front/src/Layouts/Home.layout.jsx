@@ -1,11 +1,13 @@
 import React from "react";
 import DefaultNavbar from "../Components/Navbar/Default.Navbar";
+import MobileNavigator from "../Mobile Navigator/MobileNavigator";
 
 const HomeLayout = (props) => {
     return (
         <>
-        <DefaultNavbar />
+            <DefaultNavbar />
             {props.children}
+            <MobileNavigator />
         </>
     )
 }
