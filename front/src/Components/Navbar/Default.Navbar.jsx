@@ -82,7 +82,7 @@ const Mainscreen = () => {
 const DefaultNavbar = () => {
     return (
         <>
-            <nav className='bg-navbarbg-900' >
+            <nav className='bg-navbarbg-900 fixed top-0 w-full' >
 
                 <div className='hidden lg:flex'>
                     <Mainscreen />
