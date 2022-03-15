@@ -1,9 +1,13 @@
+// HOC
+import HomeHOC from "./HOC/Home.HOC";
+
+// Pages
+import HomePage from "./Components/pages/Home.page";
+
 function App() {
   return (
     <>
-      <div>
-        setup
-      </div>
+      <HomeHOC path="/home" exact component={HomePage} />
     </>
   );
 }
