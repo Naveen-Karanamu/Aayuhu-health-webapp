@@ -19,7 +19,7 @@ const HomePage = () => {
                 <div className=" md:flex md:px-8 md:justify-between md:items-center lg:container lg:mx-auto lg:px-16 lg:gap-10 lg:py-6 ">
                     <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-10">
                         <div className="flex items-center flex-col gap-1 md:items-start lg:gap-3">
-                            <h1 className="text-2xl lg:text-4xl md:font-bold font-semibold">ONE INDIA MANY HOSPITAL'S</h1>
+                            <h1 className="text-2xl lg:text-4xl md:font-bold font-semibold">ONE INDIA ONE HOSPITAL</h1>
                             <h5 className="text-xl font-normal lg:font-semibold lg:text-2xl">Choose your Hospital</h5>
                         </div>
                         <div className="flex items-center gap-4 justify-center md:justify-start lg:gap-6 px-6 md:px-0">
