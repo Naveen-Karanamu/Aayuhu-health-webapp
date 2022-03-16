@@ -2,10 +2,15 @@ import React from "react";
 
 // Components
 import SearchBar from "../Search Bar/SearchBar";
+import BgShape from "../Bg Shapes/BgShapes";
 
 const HomePage = () => {
     return (
         <>
+
+        <div>
+            <BgShape />
+        </div>
             <div className="lg:container lg:mx-auto lg:px-40 lg:pb-8 pt-16 lg:pt-24 md:pt-20">
                 <div>
                     <SearchBar />
