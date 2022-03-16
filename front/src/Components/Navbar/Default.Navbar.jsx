@@ -70,9 +70,9 @@ const Mainscreen = () => {
                 </div>
 
 
-                <div className='lg:flex lg:items-center lg:gap-4'>
+                <div className='lg:flex lg:items-center lg:gap-4 '>
                     <BsFillLockFill className='text-white w-8 h-8' />
-                    <h4 className='text-white font-bold text-lg'>Login</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-red-400'>Login</h4>
                 </div>
             </div>
 
