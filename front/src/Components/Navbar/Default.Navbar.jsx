@@ -11,7 +11,7 @@ const Mobile = () => {
             <div className='flex items-center justify-between bg-blue-400 py-3 px-3'>
                 <div className='flex items-center gap-3 '>
                     <FaHeartbeat className='w-10 h-10 text-red-500' />
-                    <h1 className='text-lg font-semibold text-white'>PARK CAPSULE</h1>
+                    <h1 className='text-lg font-semibold text-white'>Aveksha</h1>
                 </div>
                 <div className='flex items-center gap-1'>
                     <BsFillLockFill className='text-white w-6 h-6' />
@@ -30,7 +30,7 @@ const Medium = () => {
                     <div className=''>
                         <FaHeartbeat className='w-10 h-10 text-red-500' />
                     </div>
-                    <h1 className='md:text-xl md:font-bold text-white'>PARK CAPSULE</h1>
+                    <h1 className='md:text-xl md:font-bold text-white'>Aveksha</h1>
                 </div>
                 <div >
                     <ul className=' md:container  md:flex md:items-center md:gap-6  text-md'>
@@ -58,7 +58,7 @@ const Mainscreen = () => {
                     <div className=''>
                         <FaHeartbeat className='w-12 h-12 text-red-500' />
                     </div>
-                    <h1 className='lg:text-2xl lg:font-extrabold text-white'>PARK CAPSULE</h1>
+                    <h1 className='lg:text-2xl lg:font-extrabold text-white'>Aveksha</h1>
                 </div>
                 <div >
                     <ul className=' lg:container  lg:flex lg:items-center lg:gap-20  text-lg'>
