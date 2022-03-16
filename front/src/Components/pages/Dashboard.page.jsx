@@ -8,10 +8,14 @@ import { HiPencil } from 'react-icons/hi';
 import { BiNotepad } from 'react-icons/bi';
 import { VscTasklist } from 'react-icons/vsc';
 import { BsPersonSquare } from 'react-icons/bs';
+import BgShape from "../Bg Shapes/BgShapes";
 
 const DashboardPage = () => {
     return (
         <>
+        <div>
+            <BgShape />
+        </div>
             <div className="lg:container lg:mx-auto lg:px-40 lg:pb-8 pt-16 lg:pt-24 md:pt-20">
                 <div>
                     <SearchBar />
