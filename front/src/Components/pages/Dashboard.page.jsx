@@ -59,10 +59,10 @@ const DashboardPage = () => {
                                     <div className="hidden md:block">
                                         <div className='flex gap-6 -mt-4' >
                                             <button
-                                                className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2'>
+                                                className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2 hover:bg-gray-400 hover:text-white'>
                                                 Edit Profile <HiPencil />
                                             </button>
-                                            <button className='bg-red-500 rounded-md px-16 py-2 text-white'>
+                                            <button className='bg-red-500 rounded-md px-16 py-2 text-white hover:bg-blue-500'>
                                                 Help !
                                             </button>
                                         </div>
@@ -75,10 +75,10 @@ const DashboardPage = () => {
                             <div className="md:hidden">
                                 <div className='flex gap-6 -mt-4' >
                                     <button
-                                        className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2'>
+                                        className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2 '>
                                         Edit Profile <HiPencil />
                                     </button>
-                                    <button className='bg-red-500 rounded-md px-16 py-2 text-white'>
+                                    <button className='bg-red-500 rounded-md px-16 py-2 text-white '>
                                         Help !
                                     </button>
                                 </div>
@@ -89,15 +89,15 @@ const DashboardPage = () => {
 
                     {/* flex */}
                     <div className='flex items-center justify-evenly flex-wrap pt-6'>
-                        <div className='flex flex-col items-center gap-2 bg-gray-500 p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
+                        <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700 p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
                             <BiNotepad className=' w-12 h-12  md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
                             <h2 className='text-white font-semibold md:font-bold md:text-lg'>Prescription</h2>
                         </div>
-                        <div className='flex flex-col items-center gap-2 bg-gray-500  p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
+                        <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700  p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
                             <VscTasklist className=' w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
                             <h2 className='text-white font-semibold md:font-bold md:text-lg'>Appointments</h2>
                         </div>
-                        <div className='flex flex-col items-center gap-2 bg-gray-500  p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
+                        <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700  p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
                             <BsPersonSquare className=' w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
                             <h2 className='text-white font-semibold  md:font-bold md:text-lg'>Veiw Profile</h2>
                         </div>
