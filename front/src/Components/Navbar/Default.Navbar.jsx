@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 // iCONS
 import { BsFillLockFill } from 'react-icons/bs';
@@ -62,7 +63,8 @@ const Mainscreen = () => {
                 </div>
                 <div >
                     <ul className=' lg:container  lg:flex lg:items-center lg:gap-20  text-lg'>
-                        <li className='font-medium	hover:text-white hover:font-semibold'>Home </li>
+                        <Link to="/home">
+                            <li className='font-medium	hover:text-white hover:font-semibold'>Home </li></Link>
                         <li className='font-medium	hover:text-white hover:font-semibold'>Features </li>
                         <li className='font-medium	hover:text-white hover:font-semibold'>About us </li>
                         <li className='font-medium	hover:text-white hover:font-semibold'>Contact us </li>
