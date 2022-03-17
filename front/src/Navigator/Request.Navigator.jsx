@@ -24,9 +24,9 @@ export const RequestContainer = () => {
 
     const tabs = [
         {
-            title: "Past",
-            route: "past",
-            isActive: currentPath.includes("past")
+            title: "Requests",
+            route: "requests",
+            isActive: currentPath.includes("requests")
         },
         {
             title: "Upcoming",
@@ -34,10 +34,12 @@ export const RequestContainer = () => {
             isActive: currentPath.includes("upcoming")
         },
         {
-            title: "Requests",
-            route: "requests",
-            isActive: currentPath.includes("requests")
+            title: "Past",
+            route: "past",
+            isActive: currentPath.includes("past")
         },
+        
+        
     ]
 
     return (
