@@ -34,37 +34,8 @@ export const DoctorDashboardPage = () => {
                         {/* profile */}
 
                         <div className="flex flex-col gap-6 md:flex-row md:items-center ">
-                            <div className="flex justify-around items-center w-full">
-                                {/* <div className='flex items-center md:gap-16 justify-between '>
-                                    <div className='w-full'>
-                                        <div className='w-32 h-32 md:w-36 md:h-36'>
-                                            <img
-                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgut-XrUTj4kq8azPG0BcV3bwfaDrOvAEicg&usqp=CAU"
-                                                alt=""
-                                                className='w-full h-full rounded-full'
-                                            />
-                                        </div>
-                                        <div className='items-center flex flex-col'>
-                                            <h1 className="text-xl  text-gray-800 font-semibold md:text-2xl">Dr. Arya Bhata</h1>
-                                            <h1 className="text-lg  text-gray-800 font-semibold md:text-xl">(cardiologist)</h1>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-col items-start w-full '>
-                                        <div className='w-32 h-32 '>
-                                            <img src="https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"
-
-                                                alt=""
-                                                className='w-full h-full' />
-                                        </div>
-                                        <div>
-                                            <h5 className="text-md text-gray-700 md:text-xl">smaghd@gmail.com</h5>
-                                            <h5 className="text-sm md:text-md text-gray-500">+91 8749393993</h5>
-                                            <h5 className="text-sm md:text-md text-gray-500">Male</h5>
-                                        </div>
-                                    </div>
-                                </div> */}
-                                <div className=' w-full flex justify-around'>
+                            <div className="flex justify-between items-center w-full md:gap-16">
+                                <div className=' w-full flex justify-around md:gap-16'>
                                     <div>
                                         <div className='w-32 h-32 md:w-36 md:h-36'>
                                             <img
@@ -93,15 +64,14 @@ export const DoctorDashboardPage = () => {
                                     </div>
                                 </div>
 
-                                {/* qr code */}
                                 <div className="flex flex-col items-center gap-8">
                                     <div className="hidden md:block">
                                         <div className='flex flex-col gap-6 -mt-4' >
                                             <button
-                                                className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2 bg-white hover:bg-gray-400 hover:text-white'>
+                                                className=' flex items-center gap-2 border-solid border-2 rounded-md w-40 pl-8 py-2 bg-white hover:bg-gray-400 hover:text-white'>
                                                 Edit Profile <HiPencil />
                                             </button>
-                                            <button className='bg-red-500 rounded-md px-16 py-2 text-white hover:bg-blue-500'>
+                                            <button className='bg-red-500 rounded-md py-2 text-white hover:bg-blue-500'>
                                                 Help !
                                             </button>
                                         </div>
@@ -112,7 +82,7 @@ export const DoctorDashboardPage = () => {
                             {/* button */}
 
                             <div className="md:hidden">
-                                <div className='flex gap-6 -mt-4' >
+                                <div className='flex gap-6 -mt-4 ' >
                                     <button
                                         className=' flex items-center gap-2 border-solid border-2 rounded-md px-10 py-2 '>
                                         Edit Profile <HiPencil />
