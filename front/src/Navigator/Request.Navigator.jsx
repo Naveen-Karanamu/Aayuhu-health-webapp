@@ -42,7 +42,7 @@ export const RequestContainer = () => {
 
     return (
         <>
-            <div className="lg:container lg:mx-auto lg:px-72 lg:pb-8 pt-20 lg:pt-24 md:pt-20 px-4 md:px-8">
+            <div className="lg:container lg:mx-auto lg:px-72 lg:pb-8 pt-20 lg:pt-24 md:pt-20 px-4 md:px-8 pb-6">
                 <div className="flex justify-between">
                     {
                         tabs.map((tab) => (
