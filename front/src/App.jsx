@@ -8,6 +8,8 @@ import DashboardHOC from "./HOC/Dashboard.HOC";
 // Pages
 import HomePage from "./Components/pages/Home.page";
 import DashboardPage from "./Components/pages/Patient.Dashboard.page";
+import DoctorDashboardHOC from "./HOC/Doctor.Dashboard.HOC";
+import DoctorDashboardPage from "./Components/pages/Doctor.Dashboard";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
       <Redirect to="/home"/>
     </Route>
       <HomeHOC path="/home" exact component={HomePage} />
-      <DashboardHOC path="/dashboard" exact component={DashboardPage}/>
+      <DashboardHOC path="/padash" exact component={DashboardPage}/>
+      <DoctorDashboardHOC path="/docdash" exact component={DoctorDashboardPage}/>
     </>
   );
 }
