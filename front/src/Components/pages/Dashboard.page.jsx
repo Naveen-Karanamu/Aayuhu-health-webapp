@@ -2,13 +2,14 @@ import React from "react";
 
 // Components
 import SearchBar from "../Search Bar/SearchBar";
+import BgShape from "../Bg Shapes/BgShapes";
 
 // Icons
 import { HiPencil } from 'react-icons/hi';
 import { BiNotepad } from 'react-icons/bi';
 import { VscTasklist } from 'react-icons/vsc';
 import { BsPersonSquare } from 'react-icons/bs';
-import BgShape from "../Bg Shapes/BgShapes";
+import { MdAttachMoney } from 'react-icons/md';
 
 const DashboardPage = () => {
     return (
@@ -88,7 +89,7 @@ const DashboardPage = () => {
                     </div>
 
                     {/* flex */}
-                    <div className='flex items-center justify-evenly flex-wrap pt-6'>
+                    <div className='flex items-center justify-evenly flex-wrap pt-6 gap-2'>
                         <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700 p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
                             <BiNotepad className=' w-12 h-12  md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
                             <h2 className='text-white font-semibold md:font-bold md:text-lg'>Prescription</h2>
@@ -100,6 +101,10 @@ const DashboardPage = () => {
                         <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700  p-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
                             <BsPersonSquare className=' w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
                             <h2 className='text-white font-semibold  md:font-bold md:text-lg'>Veiw Profile</h2>
+                        </div>
+                        <div className='flex flex-col items-center gap-2 bg-gray-500 hover:bg-gray-700  pt-4 rounded-xl w-32 h-28 md:w-40 md:h-36 md:gap-6 lg:w-52'>
+                            <MdAttachMoney className=' w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-full px-2' />
+                            <h2 className='text-white font-semibold  md:font-bold md:text-lg'>Pay & Request</h2>
                         </div>
                     </div>
                 </div>
