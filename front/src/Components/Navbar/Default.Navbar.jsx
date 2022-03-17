@@ -44,8 +44,9 @@ const Medium = () => {
 
 
                 <div className='md:flex md:items-center md:gap-2'>
-                    <BsFillLockFill className='text-white w-6 h-6' />
-                    <h4 className='text-white font-bold text-lg'>Login</h4>
+                    <h4 className='text-white font-bold text-lg'>Log in</h4>
+                    |
+                    <h4 className='text-white font-bold text-lg'>Sign up</h4>
                 </div>
             </div>
         </>
@@ -73,8 +74,9 @@ const Mainscreen = () => {
 
 
                 <div className='lg:flex lg:items-center lg:gap-4 '>
-                    <BsFillLockFill className='text-white w-8 h-8' />
-                    <h4 className='text-white font-bold text-lg hover:text-blue-800'>Login</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800'>Log in</h4>
+                    |
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800'>Sign up</h4>
                 </div>
             </div>
 
