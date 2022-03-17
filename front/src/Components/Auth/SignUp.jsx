@@ -3,26 +3,20 @@ import { Fragment, useState } from 'react'
 
 // Icons
 import { FcGoogle } from "react-icons/fc"
-import SignUp from './SignUp'
+import SignIn from './SignIn';
 
-
-const SignIn = ({ isOpen, setIsOpen }) => {
-    const [openSignUp, setOpenSignUp] = useState(false)
-    const openSignUpModel = () => setOpenSignUp((prev) => !prev);
-    // console.log(openSignUp)
+const SignUp = ({ isOpen, setIsOpen }) => {
+    const [openSignIn, setOpenSignIn] = useState(false);
+    const openSignInModel = () => setOpenSignIn(true);
 
     function closeModal() {
         setIsOpen(false)
     }
 
-    function wrap() {
-        closeModal()
-        openSignUpModel()
-    }
-
     return (
         <>
-            <SignUp isOpen={openSignUp} setIsOpen={setOpenSignUp} />
+            {/* <SignIn isOpen={openSignIn} setIsOpen={setOpenSignIn} /> */}
+
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog
                     as="div"
@@ -63,26 +57,41 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     as="h3"
                                     className="text-3xl font-medium leading-6 text-gray-700 pb-10"
                                 >
-                                    Log In
+                                    Sign Up
                                 </Dialog.Title>
                                 <div className="mt-2 flex flex-col gap-4">
 
                                     <form className='flex flex-col gap-5'>
                                         <div className="flex  items-center gap-3 ">
-                                            <input type="email" name="email"
-                                                placeholder='Enter the e-mail or phone number' id="email" className=" bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                            <input type="text" name="review"
+                                                placeholder='Full Name' id="fullname" 
+                                                className=" bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+
+                                        </div>
+                                        <div className="flex items-center gap-3  ">
+                                            <input type="email" name="review"
+                                                placeholder='Email' id="email" 
+                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
                                         <div className="flex items-center gap-3  ">
                                             <input type="password" name="password"
-                                                placeholder='Enter the Password' 
-                                                id="password" className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                placeholder='Password' id="password" 
+                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
 
+                                        <div className='flex items-top gap-2'>
+                                            <input type="checkbox" id="terms" className='md:w-5 md:h-5' />
+                                            <lable htmlFor="terms" className="text-gray-500 text-xs ">I agree to Aveksha's <span className='text-blue-500 text-xs'>Terms of service, privacy policy </span>
+                                                <span > and </span>
+                                                <span className='text-blue-500 text-xs '>Content policies</span>
+                                            </lable>
+                                        </div>
+
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-zomatoRed-300 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer' >
-                                                Sign in
+                                            <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer' >
+                                                Create Account
                                             </div>
                                         </div>
                                     </form>
@@ -95,7 +104,7 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-500'>
-                                        New to Aveksha? <span className='text-zomatoRed-300 hover:cursor-pointer' onClick={wrap}>Create account</span>
+                                        Already have an account? <span className='text-blue-500 hover:cursor-pointer' onClick={closeModal}>Log in</span>
                                     </div>
 
                                 </div>
@@ -109,4 +118,4 @@ const SignIn = ({ isOpen, setIsOpen }) => {
     )
 }
 
-export default SignIn;
+export default SignUp;
