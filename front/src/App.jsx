@@ -7,7 +7,7 @@ import DashboardHOC from "./HOC/Dashboard.HOC";
 
 // Pages
 import HomePage from "./Components/pages/Home.page";
-import DashboardPage from "./Components/pages/Dashboard.page";
+import DashboardPage from "./Components/pages/Patient.Dashboard.page";
 
 function App() {
   return (
