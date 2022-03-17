@@ -1,9 +1,21 @@
 import React from 'react'
+import RequestCard from './Cards/Requests.Cards'
 
 export const RequestsRequests = () => {
   return (
-    <div>
-        req
+    <div className='flex flex-col gap-3 md:gap-4'>
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
+      <RequestCard />
     </div>
   )
 }
