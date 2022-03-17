@@ -3,7 +3,7 @@ import RequestCard from './Cards/Requests.Cards'
 
 export const RequestsRequests = () => {
   return (
-    <div className='flex flex-col gap-3 md:gap-4'>
+    <div className='flex flex-col gap-3 md:gap-4 lg:mt-24'>
       <RequestCard />
       <RequestCard />
       <RequestCard />
