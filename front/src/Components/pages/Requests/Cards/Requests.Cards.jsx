@@ -24,7 +24,7 @@ const ReqSm = () => {
 
                 <div className='flex gap-2'>
                     <button className='bg-green-400 rounded-full p-2'><MdOutlineDone /></button>
-                    <button className='bg-red-300 rounded-full p-2'><VscChromeClose /></button>
+                    <button className='bg-red-400 rounded-full p-2'><VscChromeClose /></button>
                 </div>
             </div>
         </>
@@ -51,11 +51,11 @@ const ReqMd = () => {
                     <div>12/12/2022</div>
                 </div>
                 <div className='flex flex-col gap-2 items-center justify-center'>
-                    <button className='flex gap-2 items-center bg-green-400 w-32 py-2 rounded-xl pl-7 hover:text-white hover:font-semibold hover:bg-green-600'>
+                    <button className='flex gap-2 items-center bg-green-500 w-32 py-2 rounded-xl pl-7 hover:text-white hover:font-semibold hover:bg-green-600'>
                         <p>Accept</p>
                         <MdOutlineDone />
                     </button>
-                    <button className='flex gap-2 items-center bg-red-400 w-32 py-2 rounded-xl pl-6 hover:text-white hover:font-semibold hover:bg-red-600'>
+                    <button className='flex gap-2 items-center bg-red-500 w-32 py-2 rounded-xl pl-6 hover:text-white hover:font-semibold hover:bg-red-600'>
                         <p>Decline</p>
                         <VscChromeClose />
                     </button>
