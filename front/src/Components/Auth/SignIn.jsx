@@ -81,7 +81,7 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                         </div>
 
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-zomatoRed-300 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer' >
+                                            <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-blue-700' >
                                                 Sign in
                                             </div>
                                         </div>
@@ -95,7 +95,7 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-500'>
-                                        New to Aveksha? <span className='text-zomatoRed-300 hover:cursor-pointer' onClick={wrap}>Create account</span>
+                                        New to Aveksha? <span className='text-blue-500 hover:cursor-pointer hover:text-blue-800' onClick={wrap}>Create account</span>
                                     </div>
 
                                 </div>
