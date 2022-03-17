@@ -22,6 +22,9 @@ function App() {
     <Route path="/" exact>
       <Redirect to="/home"/>
     </Route>
+    <Route path="/request/:id" exact>
+      <Redirect to="/request/:id/requests"/>
+    </Route>
       <HomeHOC path="/home" exact component={HomePage} />
       <DashboardHOC path="/padash/:id" exact component={DashboardPage}/>
       <DoctorDashboardHOC path="/docdash/:id" exact component={DoctorDashboardPage}/>
