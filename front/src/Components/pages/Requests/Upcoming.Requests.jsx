@@ -1,9 +1,26 @@
 import React from 'react'
 
-export const UpcomingRequests = () => {
+// Icons
+import { FaUserCircle } from "react-icons/fa"
+import PastCards from './Cards/Past.Cards'
+
+const UpcomingRequests = () => {
   return (
-    <div>
-        up
+    <div className='flex flex-col gap-3 md:gap-4'>
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
+      <PastCards />
     </div>
   )
 }
