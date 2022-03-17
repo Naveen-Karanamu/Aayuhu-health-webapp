@@ -3,7 +3,7 @@ import { Route, Redirect } from "react-router-dom";
 
 // HOC
 import HomeHOC from "./HOC/Home.HOC";
-import DashboardHOC from "./HOC/Dashboard.HOC";
+import DashboardHOC from "./HOC/Patient.Dashboard.HOC";
 
 // Pages
 import HomePage from "./Components/pages/Home.page";
