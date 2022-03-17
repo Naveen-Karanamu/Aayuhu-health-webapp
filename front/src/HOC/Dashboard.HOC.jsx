@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from "react-router-dom"
 import HomeLayout from '../Layouts/Home.layout'
 
-export const DashboardHOC = ({ component: Component, ...rest }) => {
+const DashboardHOC = ({ component: Component, ...rest }) => {
     return (
         <>
             <Route {...rest} component={(props) => (
