@@ -33,6 +33,10 @@ const HomePage = () => {
                 </div>
 
             </div>
+            
+            <div className="bg-red-600 fixed md:bottom-8 md:right-8 bottom-16 right-4 px-4 py-2 rounded-xl md:rounded-2xl  z-10">
+                <button className="text-white md:text-lg">Emergency</button>
+            </div>
         </>
     )
 }
