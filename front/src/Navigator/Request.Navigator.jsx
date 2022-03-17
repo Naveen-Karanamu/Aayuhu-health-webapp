@@ -9,7 +9,7 @@ const RequestNavigator = (props) => {
     return (
         <Link to={`/request/${id}/${props.route}`}>
             <div className={props.isActive ? "flex items-center gap-1 text-blue-700 font-bold " : "flex items-center gap-1"}>
-                <p className={props.isActive?"text-xl border-b-2 border-blue-800 pb-2":" text-xl"}>{props.title}</p>
+                <p className={props.isActive?" text-xl border-b-2 border-blue-800 pb-1":" text-xl"}>{props.title}</p>
                 {
                     props.isActive?<FaChevronUp />:<FaChevronDown />
                 }
@@ -42,7 +42,7 @@ export const RequestContainer = () => {
 
     return (
         <>
-            <div className="lg:container lg:mx-auto lg:px-40 lg:pb-8 pt-20 lg:pt-24 md:pt-20 px-4 ">
+            <div className="lg:container lg:mx-auto lg:px-72 lg:pb-8 pt-20 lg:pt-24 md:pt-20 px-4 md:px-8">
                 <div className="flex justify-between">
                     {
                         tabs.map((tab) => (
