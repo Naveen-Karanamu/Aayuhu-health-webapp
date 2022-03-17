@@ -28,7 +28,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="p-6 rounded-lg md:p-0 md:w-80 lg:w-1/2">
-                        <img src="https://t4.ftcdn.net/jpg/02/74/73/01/360_F_274730119_ht4FXz4R6RnIJgPk7WeNALxxaf524Jrb.jpg" alt="doctors" className="w-full h-full rounded-lg" />
+                        <img src="https://media.istockphoto.com/vectors/medical-team-vector-id1214423422?k=20&m=1214423422&s=612x612&w=0&h=WmzB4WiNJ_II5I6uQIGGaYMh45gP8qikNnIyMpqPPAA=" alt="doctors" className="w-full h-full rounded-lg" />
                     </div>
                 </div>
 
