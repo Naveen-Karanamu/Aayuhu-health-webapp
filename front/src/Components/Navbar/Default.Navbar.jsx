@@ -44,9 +44,9 @@ const Medium = () => {
 
 
                 <div className='md:flex md:items-center md:gap-2'>
-                    <h4 className='text-white font-bold text-lg'>Log in</h4>
+                    <h4 className='text-white font-bold text-lg '>Log in</h4>
                     |
-                    <h4 className='text-white font-bold text-lg'>Sign up</h4>
+                    <h4 className='text-white font-bold text-lg '>Sign up</h4>
                 </div>
             </div>
         </>
@@ -65,18 +65,18 @@ const Mainscreen = () => {
                 <div >
                     <ul className=' lg:container  lg:flex lg:items-center lg:gap-20  text-lg'>
                         <Link to="/home">
-                            <li className='font-medium	hover:text-white hover:font-semibold'>Home </li></Link>
-                        <li className='font-medium	hover:text-white hover:font-semibold'>Features </li>
-                        <li className='font-medium	hover:text-white hover:font-semibold'>About us </li>
-                        <li className='font-medium	hover:text-white hover:font-semibold'>Contact us </li>
+                            <li className='font-medium	hover:text-white hover:font-semibold hover:cursor-pointer'>Home </li></Link>
+                        <li className='font-medium	hover:text-white hover:font-semibold hover:cursor-pointer'>Features </li>
+                        <li className='font-medium	hover:text-white hover:font-semibold hover:cursor-pointer'>About us </li>
+                        <li className='font-medium	hover:text-white hover:font-semibold hover:cursor-pointer'>Contact us </li>
                     </ul>
                 </div>
 
 
                 <div className='lg:flex lg:items-center lg:gap-4 '>
-                    <h4 className='text-white font-bold text-lg hover:text-blue-800'>Log in</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'>Log in</h4>
                     |
-                    <h4 className='text-white font-bold text-lg hover:text-blue-800'>Sign up</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'>Sign up</h4>
                 </div>
             </div>
 
