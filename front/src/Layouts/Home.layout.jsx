@@ -1,6 +1,6 @@
 import React from "react";
 import DefaultNavbar from "../Components/Navbar/Default.Navbar";
-import MobileNavigator from "../Mobile Navigator/MobileNavigator";
+import MobileNavigator from "../Navigator/MobileNavigator";
 
 const HomeLayout = (props) => {
     return (

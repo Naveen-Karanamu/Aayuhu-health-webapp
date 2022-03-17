@@ -12,6 +12,9 @@ import DashboardPage from "./Components/pages/Patient.Dashboard.page";
 import DoctorDashboardHOC from "./HOC/Doctor.Dashboard.HOC";
 import DoctorDashboardPage from "./Components/pages/Doctor.Dashboard";
 import Requestpage from "./Components/pages/Request.page";
+import PastRequests from "./Components/pages/Requests/Past.Requests";
+import UpcomingRequests from "./Components/pages/Requests/Upcoming.Requests";
+import RequestsRequests from "./Components/pages/Requests/Requests.Requests";
 
 function App() {
   return (
@@ -20,9 +23,11 @@ function App() {
       <Redirect to="/home"/>
     </Route>
       <HomeHOC path="/home" exact component={HomePage} />
-      <DashboardHOC path="/padash" exact component={DashboardPage}/>
-      <DoctorDashboardHOC path="/docdash" exact component={DoctorDashboardPage}/>
-      <RequestHOC path="/request" exact component={Requestpage}/>
+      <DashboardHOC path="/padash/:id" exact component={DashboardPage}/>
+      <DoctorDashboardHOC path="/docdash/:id" exact component={DoctorDashboardPage}/>
+      <RequestHOC path="/request/:id/past" exact component={PastRequests}/>
+      <RequestHOC path="/request/:id/upcoming" exact component={UpcomingRequests}/>
+      <RequestHOC path="/request/:id/requests" exact component={RequestsRequests}/>
     </>
   );
 }
