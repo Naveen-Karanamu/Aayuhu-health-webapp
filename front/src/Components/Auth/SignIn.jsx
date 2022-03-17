@@ -79,6 +79,9 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                                 id="password" className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
+                                        <div>
+                                            <p className='text-blue-500 hover:cursor-pointer hover:text-blue-800 text-right'>Forgot Password?</p>
+                                        </div>
 
                                         <div className='flex items-center justify-center'>
                                             <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-blue-700' >
