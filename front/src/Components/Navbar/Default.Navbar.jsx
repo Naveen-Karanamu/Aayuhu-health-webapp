@@ -1,12 +1,15 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Link } from "react-router-dom"
+
+// Components
+import SignIn from '../Auth/SignIn';
 
 // iCONS
 import { BsFillLockFill } from 'react-icons/bs';
 import { FaHeartbeat } from 'react-icons/fa';
 
 
-const Mobile = () => {
+const Mobile = ({signIn,signUp}) => {
     return (
         <>
             <div className='flex items-center justify-between bg-blue-400 py-3 px-3'>
@@ -16,14 +19,14 @@ const Mobile = () => {
                 </div>
                 <div className='flex items-center gap-1'>
                     <BsFillLockFill className='text-white w-6 h-6' />
-                    <h4 className='text-white font-bold text-lg'>Login</h4>
+                    <h4 className='text-white font-bold text-lg' onClick={signIn}>Login</h4>
                 </div>
             </div>
         </>
     );
 };
 
-const Medium = () => {
+const Medium = ({signIn,signUp}) => {
     return (
         <>
             <div className=' md:container md:py-4 md:px-6 md:flex md:items-center md:justify-between   bg-blue-400'>
@@ -44,15 +47,15 @@ const Medium = () => {
 
 
                 <div className='md:flex md:items-center md:gap-2'>
-                    <h4 className='text-white font-bold text-lg '>Log in</h4>
+                    <h4 className='text-white font-bold text-lg 'onClick={signIn}>Log in</h4>
                     |
-                    <h4 className='text-white font-bold text-lg '>Sign up</h4>
+                    <h4 className='text-white font-bold text-lg 'onClick={signUp}>Sign up</h4>
                 </div>
             </div>
         </>
     )
 }
-const Mainscreen = () => {
+const Mainscreen = ({signIn,signUp}) => {
     return (
         <>
             <div className=' lg:container lg:py-4 lg:px-24 lg:flex lg:items-center lg:justify-between   bg-blue-400'>
@@ -74,9 +77,9 @@ const Mainscreen = () => {
 
 
                 <div className='lg:flex lg:items-center lg:gap-4 '>
-                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'>Log in</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'onClick={signIn}>Log in</h4>
                     |
-                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'>Sign up</h4>
+                    <h4 className='text-white font-bold text-lg hover:text-blue-800 hover:cursor-pointer'onClick={signUp}>Sign up</h4>
                 </div>
             </div>
 
@@ -84,18 +87,23 @@ const Mainscreen = () => {
     );
 };
 const DefaultNavbar = () => {
+    const [openSignIn, setOpenSignIn] = useState(false);
+
+    const openSignInModel = () => setOpenSignIn(true);
+
     return (
         <>
+        <SignIn isOpen={openSignIn} setIsOpen={setOpenSignIn} />
             <nav className='bg-navbarbg-900 fixed top-0 w-full shadow-xl z-10' >
 
                 <div className='hidden lg:flex'>
-                    <Mainscreen />
+                    <Mainscreen signIn={openSignInModel} signUp={openSignUpModel}/>
                 </div>
                 <div className='hidden md:flex lg:hidden'>
-                    <Medium />
+                    <Medium signIn={openSignInModel} signUp={openSignUpModel}/>
                 </div>
                 <div className=' md:hidden'>
-                    <Mobile />
+                    <Mobile signIn={openSignInModel} signUp={openSignUpModel}/>
                 </div>
             </nav>
         </>
