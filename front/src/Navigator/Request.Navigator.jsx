@@ -42,7 +42,7 @@ export const RequestContainer = () => {
 
     return (
         <>
-            <div className="lg:container lg:mx-auto lg:px-72 lg:pt-6 px-4 md:px-8 bg-white sticky lg:top-20 md:top-16 lg:pb-4 md:pt-4 md:pb-4 top-16 py-2 mb-20" style={{height:"fit-content"}}>
+            <div className="lg:container lg:mx-auto lg:px-72 lg:pt-6 px-4 md:px-8 bg-white sticky lg:top-20 md:top-16 lg:pb-4 md:pt-4 md:pb-4 top-16 py-2 mb-20 shadow-sm" style={{height:"fit-content"}}>
                 <div className="flex justify-between">
                     {
                         tabs.map((tab) => (
