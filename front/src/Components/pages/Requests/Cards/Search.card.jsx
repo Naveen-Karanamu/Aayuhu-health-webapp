@@ -6,7 +6,7 @@ import { FaUserCircle, FaRupeeSign } from "react-icons/fa";
 export const SearchCard = () => {
     return (
         <>
-            <div className="flex gap-6 flex-wrap items-centre justify-evenly drop-shadow-xl ">
+            <div className="flex gap-6  items-centre justify-evenly drop-shadow-xl">
                 <div className='flex flex-col gap-3 bg-gray-200 p-2 lg:p-4 rounded-xl'>
                     {/* profile */}
                     <div className='flex items-center justify-center gap-2'>

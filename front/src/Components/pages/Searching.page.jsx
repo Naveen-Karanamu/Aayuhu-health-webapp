@@ -15,7 +15,7 @@ export const Searchingpage = () => {
                 <div className='lg:container lg:mx-auto lg:px-40'>
                     <SearchBar />
                 </div>
-                <div className='flex flex-wrap lg:gap-6 gap-4 lg:container lg:mx-auto lg:px-40 items-center justify-center'>
+                <div className='flex md:flex-wrap flex-col md:flex-row lg:gap-6 gap-4 lg:container lg:mx-auto lg:px-40 items-center justify-center'>
                     <SearchCard />
                     <SearchCard />
                     <SearchCard />
