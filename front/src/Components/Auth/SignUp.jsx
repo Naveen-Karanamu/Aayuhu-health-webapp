@@ -80,6 +80,12 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                                 className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
+                                        <div className="flex items-center gap-3  ">
+                                            <input type="password" name="password"
+                                                placeholder='Confirm Password' id="password" 
+                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+
+                                        </div>
 
                                         <div className='flex items-top gap-2'>
                                             <input type="checkbox" id="terms" className='md:w-5 md:h-5' />
